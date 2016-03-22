@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">搜救系统</string>
+    <string name="action_settings">THARS</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Login_user_name">hanzhishuai</string>
+    <string name="login_label_username" >人员名称</string>
+    <string name="login_username_hint"></string>
+    <string name="login_password_hint">XXXX</string>
+    <string name="login_label_password">人员ID</string>
+    <string name="login_label_signin">登  陆</string>
+    <string name="second">选择喜欢的话题~</string>
+    <string name="hello">Hello World, LoginActivity!</string> 
+    <string name="login_label_register">注 册</string>
+    <string name="regi_username_hint"></string>
+    <string name="handle">提交数据</string>
+    <string name="login_label_anime">anime</string>
+</resources>

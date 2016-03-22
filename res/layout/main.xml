@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.test.BTClient"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:layout_marginTop="0dip"
+        android:orientation="horizontal" >
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:background="@drawable/omnibg"
+            android:shrinkColumns="0"
+            android:stretchColumns="0" >
+
+			<TableRow
+                  android:layout_width="match_parent"
+                  android:layout_height="20dip" 
+                  >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:text="人员ID"
+                            android:textSize="18sp" />
+
+                       <TextView
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:text="RSSI"
+                           android:textSize="18sp" />
+
+            </TableRow>
+            <TableRow
+                  android:layout_width="match_parent"
+                  android:layout_height="20dip" >
+
+            <Button
+                android:id="@+id/btnID1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:background="@drawable/btnlistbg"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/RSSIID1"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:text=" "
+                android:textSize="18sp" />
+
+            </TableRow>
+
+
+            <TableRow
+                  android:layout_width="match_parent"
+                  android:layout_height="40dip" >
+
+            <Button
+                android:id="@+id/btnID2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:background="@drawable/btnlistbg"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/RSSIID2"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dip"
+                            android:text=" "
+                            android:textSize="18sp" />
+            </TableRow>
+			<TableRow
+                  android:layout_width="match_parent"
+                  android:layout_height="40dip" >
+
+            <Button
+                android:id="@+id/btnID3"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:background="@drawable/btnlistbg"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/RSSIID3"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dip"
+                            android:text=" "
+                            android:textSize="18sp" />
+            </TableRow>
+            <TableRow
+                  android:layout_width="match_parent"
+                  android:layout_height="40dip" >
+
+            <Button
+                android:id="@+id/btnID4"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:background="@drawable/btnlistbg"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/RSSIID4"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:text=" "
+                android:textSize="18sp" />
+            </TableRow>
+            <TableRow
+                  android:layout_width="match_parent"
+                  android:layout_height="40dip" >
+
+            <Button
+                android:id="@+id/btnID5"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:background="@drawable/btnlistbg"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/RSSIID5"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dip"
+                            android:text=" "
+                            android:textSize="18sp" />
+            </TableRow>
+            
+        </TableLayout>
+        <!-- 列表显示 -->
+
+        <RelativeLayout
+            android:layout_width="195dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/omnilistView"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:cacheColorHint="#00000000"
+                android:divider="@null" >
+
+    </ListView>
+    
+            <EditText
+                android:id="@+id/recordName"
+                android:layout_width="0dp"
+                android:layout_height="33dp"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentBottom="true"
+                android:textSize="10sp"
+                android:background="@drawable/btntrans"
+                android:text=" " />
+
+            <Button
+                android:id="@+id/btnsave"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/btntrans"
+                android:text=" " />
+
+            <Button
+                android:id="@+id/btnload"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="105dp"
+                android:background="@drawable/btntrans"
+                android:text=" " />
+            
+            </RelativeLayout>
+        
+        <ImageView
+            android:id="@+id/header"
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:layout_marginLeft="0dip" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dip"
+                android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/Button03"
+                android:layout_width="match_parent"
+                android:layout_height="20dip"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btntrans"
+                android:onClick="onConnectButtonClicked"
+                android:textSize="11sp"
+                android:textColor="#FFFFFF"
+                android:text="连   接" />
+
+                <TableLayout
+                    android:id="@+id/Status"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="40dp"
+                    android:stretchColumns="0" >
+
+                    <TableRow
+                        android:id="@+id/tableRow1"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dip" >
+
+                        <TextView
+                            android:id="@+id/bthStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="蓝牙连接"
+                            android:textColor="#D1D1D1"
+                            android:textSize="12sp" />
+
+<!--                         <ImageView -->
+<!--                             android:id="@+id/bthStatusimg" -->
+<!--                             android:layout_width="match_parent" -->
+<!--                             android:layout_height="match_parent" -->
+<!--                             android:src="@drawable/red" /> -->
+                        
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/tableRow2"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dip" >
+
+                        <TextView
+                            android:id="@+id/omniStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="全向天线"
+                            android:textColor="#D1D1D1"
+                            android:textSize="12sp" />
+
+<!--                         <ImageView -->
+<!--                             android:id="@+id/omniStatusimg" -->
+<!--                             android:layout_width="match_parent" -->
+<!--                             android:layout_height="match_parent" -->
+<!--                             android:src="@drawable/red" /> -->
+                        
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/tableRow3"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dip" >
+
+                        <TextView
+                            android:id="@+id/dirStatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="定向天线"
+                            android:textColor="#D1D1D1"
+                            android:textSize="12sp" />
+
+<!--                         <ImageView -->
+<!--                             android:id="@+id/dirStatusimg" -->
+<!--                             android:layout_width="wrap_content" -->
+<!--                             android:layout_height="match_parent" -->
+<!--                             android:src="@drawable/red"/> -->
+                        
+                    </TableRow>
+
+         		</TableLayout>
+            
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+                
+                <Button
+                    android:id="@+id/choosedb"
+                    android:layout_width="110dp"
+                    android:layout_height="20dip"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/btntrans"
+                    android:text="选择数据库"
+                    android:textColor="#B2DFDB"
+                    android:textSize="12sp" />
+                
+                </RelativeLayout>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+                android:orientation="vertical" >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="0dp"
+                android:stretchColumns="0" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:layout_marginTop="5dp" >
+ 
+                <TextView
+                            android:id="@+id/userName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" "
+                            android:textColor="#B2DFDB"
+                            android:textSize="12sp" />  
+                
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:layout_marginTop="20dp" >
+ 
+                <TextView
+                            android:id="@+id/shoUserName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" "
+                            android:textColor="#B2DFDB"
+                            android:textSize="12sp" />  
+            </TableRow>
+            <TableRow
+                  android:layout_width="match_parent"
+                  android:layout_height="30dip" > 
+                <TextView
+                            android:id="@+id/shoHeight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dip"
+                            android:text="身高："
+                            android:textSize="18sp" />  
+            </TableRow>
+            <TableRow
+                  android:layout_width="match_parent"
+                  android:layout_height="30dip" > 
+                <TextView
+                            android:id="@+id/shoWeight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dip"
+                            android:text="体重："
+                            android:textSize="18sp" />  
+            </TableRow>
+            <TableRow
+                  android:layout_width="match_parent"
+                  android:layout_height="0dip" > 
+                <TextView
+                            android:id="@+id/shoGender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dip"
+                            android:text="性别："
+                            android:textSize="18sp" />  
+            </TableRow>
+            <TableRow
+                  android:layout_width="match_parent"
+                  android:layout_height="0dip" > 
+                <TextView
+                            android:id="@+id/shoBirth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dip"
+                            android:text="出生年月："
+                            android:textSize="18sp" />  
+            </TableRow>
+            <TableRow
+                  android:layout_width="match_parent"
+                  android:layout_height="0dip" > 
+                <TextView
+                            android:id="@+id/shoBloodType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dip"
+                            android:text="血型："
+                            android:textSize="18sp" />  
+            </TableRow>
+            <TableRow
+                  android:layout_width="match_parent"
+                  android:layout_height="0dip" > 
+                <TextView
+                            android:id="@+id/shoAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dip"
+                            android:text="家庭住址："
+                            android:textSize="18sp" />  
+            </TableRow>
+            <TableRow
+                  android:layout_width="match_parent"
+                  android:layout_height="0dip" > 
+                <TextView
+                            android:id="@+id/shoPhone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dip"
+                            android:text="联系电话："
+                            android:textSize="18sp" />  
+            </TableRow>
+            
+            
+            </TableLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.78"
+        android:orientation="horizontal" >
+
+       <RelativeLayout
+           android:id="@+id/rl1"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginTop="20dp"
+           android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/Button06"
+                    android:layout_width="0dip"
+                    android:layout_height="0dip"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="27dp"
+                    android:background="@drawable/shut"
+                    android:onClick="onQuitButtonClicked" />
+
+                
+
+                <TextView
+                    android:id="@+id/strrssi"
+                    android:layout_width="0dip"
+                    android:layout_height="0dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="信号强度："
+                    android:textColor="#ffffff"
+                    android:textSize="25sp" />
+
+                <com.BTClient1.RoundProgressBar
+                    android:id="@+id/roundProgressBar2"
+                    android:layout_width="170dip"
+                    android:layout_height="170dip"
+                    android:layout_below="@+id/strrssi"
+                    android:layout_marginLeft="75dp"
+                    android:layout_toRightOf="@+id/strrssi"
+                    android_custom:roundColor="#3E003A"
+                    android_custom:roundProgressColor="@android:color/white"
+                    android_custom:roundWidth="15dip"
+                    android_custom:textColor="#B2DFDB"
+                    android_custom:textSize="50sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

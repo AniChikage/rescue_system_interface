@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+
+
+    <TextView
+        android:id="@+id/regi_username_label"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_marginRight="5dp"  
+        android:layout_marginTop="40dp"  
+        android:text="@string/login_label_username"  
+        style="@style/normalText" />
+
+    <EditText
+        android:id="@+id/regi_username"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:layout_marginTop="40dp" 
+        android:layout_toRightOf="@+id/regi_username_label"
+        android:hint="@string/regi_username_hint"  
+        android:singleLine="true"  
+        android:layout_alignParentRight="true"
+        android:inputType="text"/> 
+
+    <TextView
+        android:id="@+id/regi_pwd_label"  
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="100dp" 
+        android:text="@string/login_label_password"  
+        android:layout_marginRight="5dp"
+        style="@style/normalText"/>    
+
+    <EditText
+       android:id="@+id/regi_pwd"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="100dp" 
+       android:layout_toRightOf="@id/regi_pwd_label"
+       android:layout_alignParentRight="true" 
+       android:singleLine="true"  
+       android:inputType="textPassword" /> 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/regi_pwd"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/regi_handle_btn"
+            android:background="@drawable/blue_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="@string/handle" />
+    </LinearLayout>
+</RelativeLayout>
